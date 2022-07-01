@@ -5,8 +5,6 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.flipkart.zjsonpatch.DiffFlags;
 import com.flipkart.zjsonpatch.JsonDiff;
 import com.google.gson.Gson;
-import model.DiffResponse;
-import model.ResultLog;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,6 +30,6 @@ public class ChangeLogOpenApi {
                 EnumSet.of(DiffFlags.ADD_ORIGINAL_VALUE_ON_REPLACE));
 
         String diffs = patch.toString();
-		System.out.println(diffs);
+        System.out.println(diffs);
     }
 }
